@@ -743,7 +743,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80.4, 400, 130 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80.4, 400, 136.84 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -988,7 +988,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -48,-10, -0.4 }
+#define NOZZLE_TO_PROBE_OFFSET { -52,-6, -0.4 }  //Offsets for Hero Me Gen5 single 5015 blower
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1132,7 +1132,7 @@
 #define Y_MIN_POS -10
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define Y_MAX_POS 225 //default is Y_BED_SIZE
 #define Z_MAX_POS 250
 
 /**
